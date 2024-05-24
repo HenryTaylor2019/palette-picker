@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/palette-picker/static/css/main.6a5128d2.css",
+    "main.js": "/palette-picker/static/js/main.6e771033.js",
+    "static/js/453.eeebd822.chunk.js": "/palette-picker/static/js/453.eeebd822.chunk.js",
+    "index.html": "/palette-picker/index.html",
+    "main.6a5128d2.css.map": "/palette-picker/static/css/main.6a5128d2.css.map",
+    "main.6e771033.js.map": "/palette-picker/static/js/main.6e771033.js.map",
+    "453.eeebd822.chunk.js.map": "/palette-picker/static/js/453.eeebd822.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a5128d2.css",
+    "static/js/main.6e771033.js"
+  ]
+}
