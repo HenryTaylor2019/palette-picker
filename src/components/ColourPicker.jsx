@@ -88,22 +88,25 @@ function ColourPicker() {
     };
 
     return (
-        <div className='flex justify-center items-center w-full'>
-            <div className="flex mt-10 w-full relative">
-                {colourBars.map((colourBar, index) => (
-                    <div key={colourBar.id} className='w-full relative'>
-                        <ColourBar
-                            colour={colourBar.colour}
-                            removeColourBar={() => removeColourBar(colourBar.id)}
-                            textColor={isDarkBackground(colourBar.colour) ? 'white' : 'black'}
-                            onAddColourBar={() => addColourBar(index)}
-                            toggleLock={() => toggleLock(colourBar.id)}
-                            isLocked={colourBar.locked}
-                        />
-                    </div>
-                ))}
+        <>
+            <h1>Click Space to Randomise Colours</h1>
+            <div className='flex justify-center items-center w-full'>
+                <div className="flex mt-10 w-full relative">
+                    {colourBars.map((colourBar, index) => (
+                        <div key={colourBar.id} className='w-full relative'>
+                            <ColourBar
+                                colour={colourBar.colour}
+                                removeColourBar={() => removeColourBar(colourBar.id)}
+                                textColor={isDarkBackground(colourBar.colour) ? 'white' : 'black'}
+                                onAddColourBar={() => addColourBar(index)}
+                                toggleLock={() => toggleLock(colourBar.id)}
+                                isLocked={colourBar.locked}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

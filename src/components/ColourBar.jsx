@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaLock, FaLockOpen, FaMinus, FaPlus, FaTimes } from 'react-icons/fa';
+import { FaLock, FaLockOpen, FaMinus, FaPlus, FaTools } from 'react-icons/fa';
 import '../index.css';
 
 
@@ -34,11 +34,9 @@ function ColourBar({ colour, removeColourBar, textColor, onAddColourBar, toggleL
             </div>
             {
                 toolsVisible ? (
-                    <div className="flex justify-center items-center mt-2 gap-1">
+                    <div className="flex justify-center items-center mt-2 gap-1" onMouseLeave={toggleToolsView}>
                         <IconButton icon={<FaPlus />} onClick={onAddColourBar} label="Add" />
                         <IconButton icon={<FaMinus />} onClick={handleRemove} label="Subtract" />
-                        <IconButton icon={<FaTimes />} onClick={toggleToolsView} label="Close" />
-
                         <IconButton
                             icon={isLocked ? <FaLock /> : <FaLockOpen />}
                             label={isLocked ? 'Unlock' : 'Lock'}
@@ -46,8 +44,8 @@ function ColourBar({ colour, removeColourBar, textColor, onAddColourBar, toggleL
                         />
                     </div>
                 ) :
-                    <div onClick={toggleToolsView}>
-                        <h2>Tools</h2>
+                    <div onMouseMove={toggleToolsView}>
+                        <IconButton icon={<FaTools />} />
                     </div>
             }
         </>
