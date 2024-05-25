@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/palette-picker/static/css/main.358b4a31.css",
-    "main.js": "/palette-picker/static/js/main.0917e209.js",
-    "static/js/453.eeebd822.chunk.js": "/palette-picker/static/js/453.eeebd822.chunk.js",
+    "main.css": "/palette-picker/static/css/main.e3987311.css",
+    "main.js": "/palette-picker/static/js/main.6377f4cc.js",
+    "static/js/453.abd30bce.chunk.js": "/palette-picker/static/js/453.abd30bce.chunk.js",
     "index.html": "/palette-picker/index.html",
-    "main.358b4a31.css.map": "/palette-picker/static/css/main.358b4a31.css.map",
-    "main.0917e209.js.map": "/palette-picker/static/js/main.0917e209.js.map",
-    "453.eeebd822.chunk.js.map": "/palette-picker/static/js/453.eeebd822.chunk.js.map"
+    "main.e3987311.css.map": "/palette-picker/static/css/main.e3987311.css.map",
+    "main.6377f4cc.js.map": "/palette-picker/static/js/main.6377f4cc.js.map",
+    "453.abd30bce.chunk.js.map": "/palette-picker/static/js/453.abd30bce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.358b4a31.css",
-    "static/js/main.0917e209.js"
+    "static/css/main.e3987311.css",
+    "static/js/main.6377f4cc.js"
   ]
 }
