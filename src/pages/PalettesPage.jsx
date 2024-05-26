@@ -11,7 +11,7 @@ function PalettesPage({ paletteSelected }) {
             <div className='flex justify-center items-center gap-1'>
                 {colorPalettes.map((palette, i) => (
                     <div key={i}>
-                        <ColourPalette palette={palette} paletteSelected={paletteSelected} />
+                        <ColourPalette palette={palette.colours} paletteSelected={paletteSelected} />
                     </div>
                 ))}
             </div>

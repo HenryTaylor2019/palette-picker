@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import colorPalettes from './colourPalettes';
+import './index.css';
 import HomePage from './pages/Home';
 import PalettesPage from './pages/PalettesPage';
 import { getRandomIndex } from './utils/getRandomIndex';
@@ -60,7 +61,7 @@ function App() {
 
   const generatePopularPalette = () => {
     let randomIndex = getRandomIndex(colorPalettes.length)
-    setColourBars(colorPalettes.map(color => color[randomIndex]));
+    setColourBars(colorPalettes.colours.map(color => color[randomIndex]));
   }
 
   const removeColourBar = useCallback((id) => {
@@ -82,7 +83,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className='h-screen'>
       <Routes>
         <Route path='/' element={<HomePage
           generatePopularPalette={generatePopularPalette}
@@ -94,7 +95,7 @@ function App() {
         />} />
         <Route path='/palettes' element={<PalettesPage paletteSelected={addPaletteToPicker} />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
