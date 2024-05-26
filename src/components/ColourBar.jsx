@@ -3,7 +3,7 @@ import { useState } from 'react';
 import '../index.css';
 import Toolbar from './Toolbar';
 
-function ColourBar({ colour, textColor, isLocked, copyToClipBoard, addColourBar, removeColourBar, colourBar, toggleLock }) {
+function ColourBar({ colour, setColour, textColor, isLocked, copyToClipBoard, addColourBar, removeColourBar, colourBar, toggleLock }) {
     const [toolsVisible, setToolsVisible] = useState(false);
     const toggleToolsView = () => {
         setToolsVisible(prevState => !prevState);
@@ -12,7 +12,12 @@ function ColourBar({ colour, textColor, isLocked, copyToClipBoard, addColourBar,
         <>
             <div style={{ backgroundColor: colour }} className="flex flex-col justify-center items-center h-full w-full">
                 <div className="flex flex-col justify-center items-center w-full h-full relative">
-                    <h2 className='poppins-semibold' onClick={() => copyToClipBoard(colour)}
+
+                    {/* Need tp find a way to change the colour by id in parent */}
+                    {/* <HexColorPicker color={colour} onChange={setColour} /> */}
+
+
+                    <h2 className='poppins-semibold text-2xl ' onClick={() => copyToClipBoard(colour)}
                         style={{ color: textColor }}>{colour}
                     </h2>
                     <div className='h-24 w-full' onMouseEnter={toggleToolsView}>
